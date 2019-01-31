@@ -1,6 +1,7 @@
 package io.github.julianlfs.futebol.domain;
 
 import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +11,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
+@Document(collection = "times")
 public class Time {
 
 	@Id
